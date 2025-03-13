@@ -18,5 +18,5 @@ This repository contains a **REST API for games**, built with **ASP.NET Core**. 
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
 
-.[!NOTE].
+> [!NOTE]
 This is part of youtube video of Julio Casal, but I'm using NETCoreApp,Version=v7.0. 
