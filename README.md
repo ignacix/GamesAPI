@@ -1,6 +1,6 @@
 # Games REST API
 
-.[!NOTE].
+> [!NOTE]
 This repository contains a **REST API for games**, built with **ASP.NET Core**. It's designed to manage game-related data, offering endpoints to create, read, update, and delete (CRUD) information.
 
 ## Features
