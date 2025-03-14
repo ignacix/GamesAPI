@@ -12,6 +12,14 @@ gameDtos.Add(g1);
 gameDtos.Add(g2);
 gameDtos.Add(g3);
 
-app.MapGet("/", () => gameDtos);
+
+//GET /
+app.MapGet("/", () => "hola");
+
+// GET /games
+app.MapGet("games", () => gameDtos);
+
+// GET /games/id
+app.MapGet("games/{id}",(int id) => gameDtos.Find(game => game.Id == id));
 
 app.Run();
