@@ -1,9 +1,17 @@
 GET http://localhost:5029
 
-GET http://localhost:5029/games
-
-GET http://localhost:5029/games/1
-
+###
+GET http://localhost:5029/games/4
 
 
+###
+POST http://localhost:5029/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Survival",
+    "price": 2.99,
+    "releaseDate": "1998-07-30T00:00:00"
+}
 

@@ -4,19 +4,23 @@ namespace GameStore.API.Dtos
     //See more info: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record
     public class GameDto
     {
-        public GameDto(int Id, string Name, string Genre, decimal Price, DateOnly ReleaseDate)
+        public GameDto(){
+            this.Name = "";
+            this.Genre = "";
+        }
+        public GameDto(int id, string name, string genre, decimal price, DateTime releaseDate)
         {
-            this.Id = Id;
-            this.Name = Name;
-            this.Genre = Genre;
-            this.Price = Price;
-            this.RealeaseDate = ReleaseDate;
+            this.Id = id;
+            this.Name = name;
+            this.Genre = genre;
+            this.Price = price;
+            this.ReleaseDate = releaseDate;
         }
 
         public int Id { get; set;}
         public string Name { get; set;}
         public string Genre { get; set;}
         public decimal Price {get; set;}
-        public DateOnly RealeaseDate {get; set;}
+        public DateTime ReleaseDate {get; set;}
     }
 }
